@@ -2,10 +2,12 @@ import * as styles from './index.style';
 import { ExampleArrayItem } from '../example/interfaces/example-array-item';
 import { exampleArray$, getExampleArray } from '../example/services/example.service';
 import * as React from 'react';
-import { View } from 'react-native';
+import { View, ImageBackground } from 'react-native';
 import { RouteComponentProps, withRouter } from 'react-router';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+
+const image = { uri: 'https://reactjs.org/logo-og.png' };
 
 interface Props extends RouteComponentProps {}
 interface State {
@@ -250,7 +252,110 @@ class _IndexPage extends React.Component<Props, State> {
                     </View>
                 </View>
 
-                
+                <View>
+                    <ImageBackground
+                        source={image}
+                        style={{
+                            flex: 1,
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            width: '100%',
+                        }}
+                    >
+                        <styles.h1 style={{ color: 'white' }}>VR DEMO</styles.h1>
+                        <styles.h5 style={{ color: 'white' }}>
+                            Experience life on Mars before you buy that Ticket!
+                        </styles.h5>
+                        <styles.h6 style={{ color: 'white' }}>
+                            We have the goal of merging two of the most exciting technologies today - VR and Space
+                            Exploration - and to overlay a layer of education on top of it.
+                        </styles.h6>
+                        <img src="" alt="VR thing" />
+                        <styles.cta onPress={() => alert('Hi!')} title="Visit GitHub" />
+                        <styles.p>Artists & Programmers needed</styles.p>
+
+                        <View
+                            style={{
+                                flex: 1,
+                                flexDirection: 'row',
+                                alignItems: 'center',
+                                justifyContent: 'space-between',
+                            }}
+                        >
+                            <View style={{ margin: '5px' }}>
+                                <styles.p style={{ color: 'white' }}>ADMINSTRATION</styles.p>
+                            </View>
+                            <View style={{ margin: '5px' }}>
+                                <styles.p style={{ color: 'white' }}>BUILDINGS</styles.p>
+                            </View>
+                            <View style={{ margin: '5px' }}>
+                                <styles.p style={{ color: 'white' }}>ECONOMICS</styles.p>
+                            </View>
+                            <View style={{ margin: '5px' }}>
+                                <styles.p style={{ color: 'white' }}>EQUIPMENT</styles.p>
+                            </View>
+                            <View style={{ margin: '5px' }}>
+                                <styles.p style={{ color: 'white' }}>INFRASTRUCTURE</styles.p>
+                            </View>
+                            <View style={{ margin: '5px' }}>
+                                <styles.p style={{ color: 'white' }}>LOGISTICS</styles.p>
+                            </View>
+                            <View style={{ margin: '5px' }}>
+                                <styles.p style={{ color: 'white' }}>MEDICAL</styles.p>
+                            </View>
+                            <View style={{ margin: '5px' }}>
+                                <styles.p style={{ color: 'white' }}>PRODUCTION</styles.p>
+                            </View>
+                            <View style={{ margin: '5px' }}>
+                                <styles.p style={{ color: 'white' }}>TRANSPORT</styles.p>
+                            </View>
+                            <View style={{ margin: '5px' }}>
+                                <styles.p style={{ color: 'white' }}>UTILITIES</styles.p>
+                            </View>
+                            <View style={{ margin: '5px' }}>
+                                <styles.p style={{ color: 'white' }}>URBAN PLANNING</styles.p>
+                            </View>
+                        </View>
+
+                        <hr style={{ width: '100%' }} />
+
+                        <View
+                            style={{
+                                flex: 1,
+                                flexDirection: 'row',
+                                justifyContent: 'space-between',
+                                alignItems: 'center',
+                                paddingBottom: '20px',
+                            }}
+                        >
+                            <View style={{ width: '30vw' }}>
+                                <styles.h3 style={{ color: 'white' }}>COORDINATED BY</styles.h3>
+                                <View style={{ flex: 1, flexDirection: 'row' }}>
+                                    <View>
+                                        <styles.p style={{ color: 'white', margin: 0 }}>Koenikova</styles.p>
+                                        <styles.p style={{ color: 'white', margin: 0 }}>Mae Elizabeth Cook</styles.p>
+                                        <styles.p style={{ color: 'white', margin: 0 }}>Felix</styles.p>
+                                        <styles.p style={{ color: 'white', margin: 0 }}>Mitchell Farnsworth</styles.p>
+                                        <styles.p style={{ color: 'white', margin: 0 }}>NLDukey</styles.p>
+                                    </View>
+                                    <View style={{ marginLeft: '10px' }}>
+                                        <styles.p style={{ color: 'white', margin: 0 }}>Sean Wessels</styles.p>
+                                        <styles.p style={{ color: 'white', margin: 0 }}>Kim von Däniken</styles.p>
+                                        <styles.p style={{ color: 'white', margin: 0 }}>Vikas</styles.p>
+                                        <styles.p style={{ color: 'white', margin: 0 }}>Elias Malak</styles.p>
+                                    </View>
+                                </View>
+                            </View>
+                            <View style={{ width: '30vw' }}>
+                                <styles.p style={{ color: 'white' }}>LALALA</styles.p>
+                            </View>
+                            <View style={{ width: '30vw' }}>
+                                <styles.h3 style={{ color: 'white' }}>FOUNDERS</styles.h3>
+                                <styles.p style={{ color: 'white' }}>Visual School MarsOrBust</styles.p>
+                            </View>
+                        </View>
+                    </ImageBackground>
+                </View>
             </View>
         );
     }
