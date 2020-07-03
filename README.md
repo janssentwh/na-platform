@@ -41,6 +41,10 @@ And install everything else! ```npm install```
 
 And you’re ready!
 
+```diff
+- MongoDB does not currently support WSL
+```
+
 <hr/>
 
 ## Start
