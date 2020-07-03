@@ -1,6 +1,6 @@
 ---
 name: Bug Report
-about: "Report bugs \U0001F41C"
+about: "Report Bugs \U0001F41C"
 title: "<!-- insert title here -->"
 labels: bug
 assignees: Bobbbay
