@@ -2,7 +2,7 @@
 name: "Feature/Enhancement "
 about: "New feature \U0001F4AA"
 title: "<!-- insert title here -->"
-labels: enhancement
+labels: Enhancement
 assignees: Bobbbay
 ---
 
