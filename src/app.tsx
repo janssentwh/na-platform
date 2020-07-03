@@ -1,5 +1,5 @@
 import * as div from './app.style';
-import { IndexPage } from './example/pages/index.page';
+import { IndexPage } from './pages/index.page';
 import { Route, Switch } from './routing';
 import { persistor, store } from './shared/services/state.service';
 import * as React from 'react';
