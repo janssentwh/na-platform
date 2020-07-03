@@ -8,6 +8,8 @@
   <a href="#start">Start</a>
   &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#contribute">Contribute</a>
+  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#learn">Learn</a>
 </p>
 
 <hr/>
