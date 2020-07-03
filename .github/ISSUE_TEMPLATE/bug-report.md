@@ -2,7 +2,7 @@
 name: Bug Report
 about: "Report Bugs \U0001F41C"
 title: "<!-- insert title here -->"
-labels: bug
+labels: Bug
 assignees: Bobbbay
 ---
 
