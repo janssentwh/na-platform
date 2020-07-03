@@ -1,5 +1,5 @@
 import * as div from './app.style';
-import { ExamplePage } from './example/pages/example.page';
+import { IndexPage } from './example/pages/index.page';
 import { Route, Switch } from './routing';
 import { persistor, store } from './shared/services/state.service';
 import * as React from 'react';
@@ -16,7 +16,6 @@ interface State {
 }
 
 export class App extends React.Component<Props, State> {
-
     private destroyed$ = new Subject<void>();
 
     constructor(props: Props, context: any) {
@@ -31,14 +30,10 @@ export class App extends React.Component<Props, State> {
         return (
             <Provider store={store}>
                 <PersistGate loading={null} persistor={persistor}>
-
-                    <div.AppSafeArea data-cy='app'>
-                        <div.ScrollContent data-cy='content'
-                            bounces={false}
-                            keyboardShouldPersistTaps='handled'>
-
+                    <div.AppSafeArea data-cy="app">
+                        <div.ScrollContent data-cy="content" bounces={false} keyboardShouldPersistTaps="handled">
                             <Switch>
-                                <Route exact={true} path='/' render={props => <ExamplePage {...props} />} />
+                                <Route exact={true} path="/" render={(props) => <IndexPage {...props} />} />
                             </Switch>
                         </div.ScrollContent>
                     </div.AppSafeArea>
