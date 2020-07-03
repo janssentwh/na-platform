@@ -60,6 +60,11 @@ And you’re up and running!
 ## Contribute
 Please do! It's not hard, but you do have to apply. Simply Private Message [SpaceInstructor](https://reddit.com/u/SpaceInstructor) on Reddit with a few words on who you are and what you want to do here. We do this to keep out creeps, people who take projects but don't finish them. It's not a job application, you won't get rejected because oof inexperience, it's simply like a Captha - to check if you're human. It's quick and there's nothing to worry about. 
 
+## Learn
+Strange new tech stack? Don't worry, we've got you covered. Take a bit of time to review the following videos:
+#### [Custom Web Platform for Opens Source Space Colonisation Project, Techs stack and features](https://www.youtube.com/watch?v=8w-d-ExkBw4)
+#### [Introduction React Native, Typescript, Redux, Rxjs, Node.js, Mongo, Mongoose. Nexus Aurora Platform](https://www.youtube.com/watch?v=06wsg2f76hQ)
+
 ## License
 This project is licensed under a Creative Commons Attribution 4.0 International License. Please read the [legalcode](https://creativecommons.org/licenses/by-sa/4.0/legalcode) for more information. 
 
