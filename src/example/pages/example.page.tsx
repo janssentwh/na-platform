@@ -5,6 +5,7 @@ import { Text, View } from 'react-native';
 import { RouteComponentProps, withRouter } from 'react-router';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { Link } from 'react-router-dom';
 
 interface Props extends RouteComponentProps {}
 interface State {
@@ -27,7 +28,8 @@ class _ExamplePage extends React.Component<Props, State> {
 
         return (
             <View>
-                <Text>Hello World</Text>
+                <Link to="/3d-catalog">3D Catalog</Link>
+                <Link to="/contributors">Contributors</Link>
 
                 <View>
                     {
@@ -43,6 +45,10 @@ class _ExamplePage extends React.Component<Props, State> {
         this.subscribeToExampleArray();
 
         getExampleArray();
+    }
+
+    public componentWillUnmount() {
+        this.destroyed$.next();
     }
 
     private subscribeToExampleArray() {
