@@ -93,6 +93,8 @@ export interface Project {
     /** The roadmap associated with this project in Jira */
     jiraProjectId: string,
 
+    projectBlueprintsIds: string[]
+
 }
 
 /** Possible States of a project in Nexus Aurora */
