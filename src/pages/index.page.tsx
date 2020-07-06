@@ -7,7 +7,7 @@ import { RouteComponentProps, withRouter } from 'react-router';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
-const image = { uri: 'https://reactjs.org/logo-og.png' };
+const image = { uri: '../assets/footer.png' };
 
 interface Props extends RouteComponentProps {}
 interface State {
@@ -347,7 +347,32 @@ class _IndexPage extends React.Component<Props, State> {
                                 </View>
                             </View>
                             <View style={{ width: '30vw' }}>
-                                <styles.p style={{ color: 'white' }}>LALALA</styles.p>
+                                <View
+                                    style={{
+                                        width: '25vw',
+                                        flex: 1,
+                                        flexDirection: 'row',
+                                        justifyContent: 'space-between',
+                                        alignItems: 'center',
+                                    }}
+                                >
+                                    <styles.p style={{ color: 'white' }}>ICON</styles.p>
+                                    <styles.p style={{ color: 'white' }}>ICON</styles.p>
+                                    <styles.p style={{ color: 'white' }}>ICON</styles.p>
+                                </View>
+                                <View
+                                    style={{
+                                        width: '25vw',
+                                        flex: 1,
+                                        flexDirection: 'row',
+                                        justifyContent: 'space-between',
+                                        alignItems: 'center',
+                                    }}
+                                >
+                                    <styles.p style={{ color: 'white' }}>Legal stuff</styles.p>
+                                    <styles.p style={{ color: 'white' }}>Legal stuff</styles.p>
+                                    <styles.p style={{ color: 'white' }}>Legal stuff</styles.p>
+                                </View>
                             </View>
                             <View style={{ width: '30vw' }}>
                                 <styles.h3 style={{ color: 'white' }}>FOUNDERS</styles.h3>
