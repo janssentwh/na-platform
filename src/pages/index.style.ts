@@ -9,6 +9,7 @@ export const h1 = styled.h1`
     margin-left: 0;
     margin-right: 0;
     font-weight: 800;
+    text-transform: uppercase;
 `;
 
 export const h2 = styled.h2`
@@ -19,6 +20,7 @@ export const h2 = styled.h2`
     margin-left: 0;
     margin-right: 0;
     font-weight: bold;
+    text-transform: uppercase;
 `;
 
 export const h3 = styled.h3`
