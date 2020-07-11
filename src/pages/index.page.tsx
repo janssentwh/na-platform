@@ -7,6 +7,8 @@ import { RouteComponentProps, withRouter } from 'react-router';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
+import { HeroPagePart } from '../pageparts/homepage/hero';
+
 const image = { uri: '../assets/footer.png' };
 
 interface Props extends RouteComponentProps {}
@@ -28,18 +30,8 @@ class _IndexPage extends React.Component<Props, State> {
     public render() {
         return (
             <View>
-                <styles.h1>Open Source Mars Colony</styles.h1>
-                <styles.h3>Croud Sourced City Plans for 1 Million Inhabitants on Mars</styles.h3>
-                <View style={{ flex: 2, flexDirection: 'row', width: '50%' }}>
-                    <View style={{ flex: 1 }}>
-                        <styles.cta onPress={() => alert('Hi!')} title="Button A" />
-                        <styles.p>Engineers ⋅ Artists ⋅ Programmers</styles.p>
-                    </View>
-                    <View style={{ flex: 1 }}>
-                        <styles.cta onPress={() => alert('Hi!')} title="Button B" />
-                        <styles.p>Extreme Engineering and Realism</styles.p>
-                    </View>
-                </View>
+                <HeroPagePart></HeroPagePart>
+                
                 <styles.h2>SPACE COLONISATION</styles.h2>
                 <styles.h3>Mars Colonization Plans Developed by An International Team of Volunteers</styles.h3>
                 <styles.h6>

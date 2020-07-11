@@ -1,6 +1,7 @@
-import styled from 'styled-components/native';
+import styledNative from 'styled-components/native';
+import styled from 'styled-components';
 
-export const h1 = styled.Text`
+export const h1 = styled.h1`
     display: block;
     font-size: 2em;
     margin-top: 0.67em;
@@ -10,7 +11,7 @@ export const h1 = styled.Text`
     font-weight: 800;
 `;
 
-export const h2 = styled.Text`
+export const h2 = styled.h2`
     display: block;
     font-size: 1.5em;
     margin-top: 1em;
@@ -20,7 +21,7 @@ export const h2 = styled.Text`
     font-weight: bold;
 `;
 
-export const h3 = styled.Text`
+export const h3 = styled.h3`
     display: block;
     font-size: 1.17em;
     margin-top: 0.83em;
@@ -30,7 +31,7 @@ export const h3 = styled.Text`
     font-weight: thin;
 `;
 
-export const h4 = styled.Text`
+export const h4 = styled.h4`
     display: block;
     margin-top: 1.33em;
     margin-bottom: 1.33em;
@@ -39,7 +40,7 @@ export const h4 = styled.Text`
     font-weight: bold;
 `;
 
-export const h5 = styled.Text`
+export const h5 = styled.h5`
     display: block;
     font-size: 0.83em;
     margin-top: 1.67em;
@@ -49,7 +50,7 @@ export const h5 = styled.Text`
     font-weight: bold;
 `;
 
-export const h6 = styled.Text`
+export const h6 = styled.h6`
     display: block;
     font-size: 0.67em;
     margin-top: 2.33em;
@@ -59,7 +60,7 @@ export const h6 = styled.Text`
     font-weight: bold;
 `;
 
-export const p = styled.Text`
+export const p = styledNative.Text`
     display: block;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -67,19 +68,19 @@ export const p = styled.Text`
     margin-right: 0;
 `;
 
-export const cta = styled.Button`
+export const cta = styledNative.Button`
     border-radius: 30px;
     background-color: red;
 `;
 
-export const AppSafeArea = styled.SafeAreaView`
+export const AppSafeArea = styledNative.SafeAreaView`
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
 `;
 
-export const ScrollContent = styled.ScrollView`
+export const ScrollContent = styledNative.ScrollView`
     width: 100%;
     height: 100%;
 `;
